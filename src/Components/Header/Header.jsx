@@ -1,9 +1,9 @@
 import React, { Component, Fragment } from 'react';
 import Title from './Title'
+import SearchBar from './SearchBar'
 import './Header.css';
 
-function Header() {
-
+export default function Header() {
     return(
         <div className="top">
             <img src="./img/banner.png" />
@@ -19,8 +19,7 @@ function Header() {
                 title="Explore"
                 desc="your amazing city together"
             />
+            <SearchBar />
         </div>
     )
 }
-
-export default Header;

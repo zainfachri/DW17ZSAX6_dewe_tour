@@ -24,7 +24,7 @@ header{
     margin-left: 20px;
     border-radius: 5px;
     font-weight: bold;
-    padding: 10px 40px;
+    padding: 5px 30px;
     cursor: pointer;
 }
 .menu a:hover{
@@ -48,4 +48,31 @@ header{
 }
 .banner h1:nth-child(2){
     font-weight: lighter;
+}
+label{
+    
+    color: #fff;
+}
+.search{
+    padding: 60px 0;
+    width: 85%;
+    margin: 0 auto;
+}
+.search input{
+    height: 45px;
+    padding-left: 20px;
+    width: 89%;
+    border: solid 1px #fff;
+    border-radius: 5px 0 0 5px;
+}
+
+.search button{
+    padding: 15px;
+    font-size: 15px;
+    width: 9%;
+    border-radius: 0 5px 5px 0;
+    background-color: #FFAF00;
+    border: solid 1px #FFAF00;
+    font-weight: bold;
+    color: #fff;
 }
