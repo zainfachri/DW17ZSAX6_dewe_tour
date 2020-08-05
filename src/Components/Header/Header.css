@@ -1,9 +1,7 @@
-.top > img{
-    display: inline-block;
+.top{
+    background-size: cover;   
     width: 100%;
-    position: absolute;
-    z-index: -2;
-    filter: brightness(70%);
+    height: 100vh;
 }
 .logo{
     float: left;
@@ -25,6 +23,7 @@ header{
     border-radius: 5px;
     font-weight: bold;
     padding: 5px 30px;
+    padding-bottom: 10px;
     cursor: pointer;
 }
 .menu a:hover{

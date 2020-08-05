@@ -1,17 +1,12 @@
-import React from 'react';
-import './App.css';
-import Header from './Components/Header/Header'
-import ContentMenu from './Components/Pages/ContentMenu'
-import TourList from './Components/Pages/TourList'
-import Footer from './Components/Footer/Footer'
+import React, { Component } from 'react'
+
+import './App.css'
+import Home from './Pages/Home'
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <ContentMenu />
-      <TourList />
-      <Footer />
+      <Home />
     </div>
   );
 }

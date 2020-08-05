@@ -1,49 +1,57 @@
 import React, { Component } from 'react'
-import Tour from '../Content/Tour'
-import '../Content/Content.css'
+import Tour from '../Components/Content/Tour'
+import '../Components/Content/Content.css'
 
-export default function TourList() {
+import pic1 from '../img/tour/pic1.png'
+import pic2 from '../img/tour/pic2.png'
+import pic3 from '../img/tour/pic3.png'
+import pic4 from '../img/tour/pic4.png'
+import pic5 from '../img/tour/pic5.png'
+import pic6 from '../img/tour/pic6.png'
+
+
+export default function TourData() {
     return(
         <div className="main">
             <p>Group Tour</p>
             <div className="tourList">
                 <Tour
-                    img="./img/pic1.png"
+                    img= {pic1}
                     pages="12/15"
                     name="6D/4N Fun Tassie Vacation ..."
                     price="IDR. 12,398,000"
                     location="Australia"
                 />
                 <Tour
-                    img="./img/pic2.png"
+                    img= {pic2}
                     pages="14/15"
                     name="6D/4N Exciting Summer in ..."
                     price="IDR. 10,288,000"
                     location="South Korea"
                 />
                 <Tour
-                    img="./img/pic3.png"
+                    img= {pic3}
                     pages="10/15"
                     name="8D/6N Wonderful Autum ..."
                     price="IDR. 28,999,000"
                     location="Japan"
                 />
                 <Tour
-                    img="./img/pic4.png"
+                    img= {pic4}
                     pages="8/15"
                     name="4D/3N Overland Jakarta B..."
                     price="IDR. 3,188,000"
                     location="Indonesia"
                 />
                 <Tour
-                    img="./img/pic5.png"
+                    img= {pic5}
                     pages="14/15"
                     name="4D/3N Labuan Bajo Delight"
                     price="IDR. 10,488,000"
                     location="Indonesia"
                 />
                 <Tour
-                    img="./img/pic6.png"
+                    img= {pic6}
                     pages="10/15"
                     name="5D/4N Magic Tokyo Fun"
                     price="IDR. 11,188,000"

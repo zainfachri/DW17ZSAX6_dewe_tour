@@ -1,14 +1,18 @@
 import React, { Component, Fragment } from 'react';
 import Title from './Title'
 import SearchBar from './SearchBar'
+import Banner from '../../img/tour/banner.png'
 import './Header.css';
+import Logo from '../../img/tour/logo.png'
 
 export default function Header() {
     return(
-        <div className="top">
-            <img src="./img/banner.png" />
+        <div className="top"
+        style={{
+            backgroundImage: `url(${Banner} )`
+        }}>
             <header>
-                <img className="logo" src="img/logo.png"/>
+                <img className="logo" src={Logo}/>
                 <div className="menu">   
                     <a>Login</a>
                     <a>Register</a>
