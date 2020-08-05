@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import Tour from '../Components/Content/Tour'
 import '../Components/Content/Content.css'
 
@@ -10,7 +10,7 @@ import pic5 from '../img/tour/pic5.png'
 import pic6 from '../img/tour/pic6.png'
 
 
-export default function TourData() {
+const TourData = () => {
     return(
         <div className="main">
             <p>Group Tour</p>
@@ -61,3 +61,4 @@ export default function TourData() {
         </div>
     )
 }
+export default TourData

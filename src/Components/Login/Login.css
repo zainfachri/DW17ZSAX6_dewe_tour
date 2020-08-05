@@ -1,0 +1,39 @@
+a{
+    text-decoration: none;
+    color: #fff;
+}
+.modal{
+    background-color: black;
+    width: 100%;
+}
+.login{
+    width:30%;
+    background-color: #fff;
+    padding: 10px 25px 90px 25px;
+    border-radius: 5px;
+    text-align: center;
+    position: absolute;
+    top: 15vh;
+    font-weight: 500;
+    left: 35vw;
+    box-shadow: -1px 4px 14px 3px rgba(0,0,0,0.45);
+}
+.login input{
+    width: 85%;
+    padding: 20px 30px;
+    background-color:  rgba(210, 210, 210, 0.25);
+    border: none;
+}
+.login p{
+    font-size: 20px;
+    text-align: left;
+}
+.login button{
+    background-color: #FFAF00;
+    color: #fff;
+    padding: 20px 30px;
+    margin-top: 40px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+}

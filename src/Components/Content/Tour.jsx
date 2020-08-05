@@ -1,6 +1,6 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-export default function Tour(props) {
+const Tour = (props) => {
     return(
             <div className="tour">
                 <div className="picture">
@@ -15,3 +15,4 @@ export default function Tour(props) {
             </div>
     )
 }
+export default Tour

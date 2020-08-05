@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 
 import icon1 from '../img/icon/guarantee.png'
 import icon2 from '../img/icon/heart.png'
@@ -6,7 +6,7 @@ import icon3 from '../img/icon/agent.png'
 import icon4 from '../img/icon/support.png'
 import Content from '../Components/Content/Content'
 
-function ContentMenu() {
+const ContentMenu = () => {
     return(
         <div>
             <Content

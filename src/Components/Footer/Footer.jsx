@@ -1,7 +1,7 @@
-import React, { Component } from 'react'
+import React from 'react'
 import './Footer.css'
 
-export default function Footer() {
+const Footer = () => {
 
     const bio = {
         nis: "DW17ZSAX6",
@@ -14,3 +14,4 @@ export default function Footer() {
         </div>
     )
 }
+export default Footer

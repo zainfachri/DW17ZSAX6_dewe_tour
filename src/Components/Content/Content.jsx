@@ -1,7 +1,8 @@
-import React, { Component } from 'react'
+import React from 'react'
 import './Content.css'
+import { Container } from 'react-bootstrap'
 
-export default function Content(props) {
+const Content = (props) => {
     return(
         <div className="menuContent">
             <div className="card">
@@ -12,3 +13,4 @@ export default function Content(props) {
         </div>
     )
 }
+export default Content
