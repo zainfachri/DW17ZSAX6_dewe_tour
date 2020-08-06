@@ -1,46 +1,26 @@
-span {
-  position: absolute;
-  right: 0;
-  top: 0;
-  margin: 5px;
-  color: #fff;
-  background-color: #ff3a2c;
-  padding: 5px 12px;
-  cursor: pointer;
-  transition: 0.5s;
-}
-span:hover {
-  filter: brightness(80%);
-  border-radius: 50%;
-}
-.bg {
-  background-color: black;
-  width: 500px;
-  position: fixed;
-}
-.login {
+.register {
   width: 25%;
   background-color: #fff;
-  padding: 10px 25px 90px 25px;
+  padding: 10px 30px;
   border-radius: 5px;
-  top: 15vh;
+  top: 7vh;
   text-align: center;
   position: fixed;
   font-weight: 500;
   left: 35vw;
   box-shadow: -1px 4px 14px 3px rgba(0, 0, 0, 0.45);
 }
-.login input {
-  width: 85%;
-  padding: 20px 30px;
-  background-color: rgba(210, 210, 210, 0.25);
-  border: none;
-}
-.login p {
+.register p {
   font-size: 16px;
   text-align: left;
 }
-.login button {
+.register input {
+  width: 85%;
+  padding: 15px 30px;
+  background-color: rgba(210, 210, 210, 0.25);
+  border: none;
+}
+.register button {
   background-color: #ffaf00;
   color: #fff;
   padding: 20px 30px;
@@ -49,7 +29,7 @@ span:hover {
   border: none;
   border-radius: 5px;
 }
-.login button:hover {
+.register button:hover {
   filter: brightness(90%);
 }
 .palm {

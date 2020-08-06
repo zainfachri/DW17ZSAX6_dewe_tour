@@ -1,8 +1,16 @@
-.footer{
-    text-align: center;
-    height: 54px;
-    line-height: 50px;
-    font-size: 18px;
-    color: #fff;
-    background-color: #FFAF00;
+.footer {
+  text-align: center;
+  height: 54px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #ffaf00;
+  position: relative;
+}
+.footer p {
+  line-height: 50px;
+}
+.footer .leaf {
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }

@@ -1,77 +1,76 @@
-.top{
-    background-size: cover;   
-    width: 100%;
-    height: 100vh;
+.top {
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
 }
-.logo{
-    float: left;
-    padding: 20px 0;
-    cursor: pointer;
+.logo {
+  float: left;
+  padding: 20px 0;
+  cursor: pointer;
 }
-header{
-    display: flow-root;
-    width: 85%;
-    margin: 0 auto;
+header {
+  display: flow-root;
+  width: 85%;
+  margin: 0 auto;
 }
-.menu{
-    float: right;
-    padding: 40px 0;
+.menu {
+  float: right;
+  padding: 40px 0;
 }
-.menu button{
-    text-decoration: none;
-    margin-left: 20px;
-    border-radius: 5px;
-    font-weight: bold;
-    padding: 10px 30px;
-    cursor: pointer;
+.menu button {
+  text-decoration: none;
+  margin-left: 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  padding: 10px 30px;
+  cursor: pointer;
 }
-.menu button:hover{
-    opacity: 0.8;
+.menu button:hover {
+  opacity: 0.8;
 }
-.menu button:nth-child(2){
-    background-color: #FFAF00;
-    color: #fff;
-    border: solid 1px #FFAF00;
+.reg {
+  background-color: #ffaf00;
+  border: solid 1px #ffaf00;
 }
-.menu button:nth-child(1){
-    border: solid 1px #fff;
-    background-color: transparent;
-    
+.log {
+  border: solid 1px #fff;
+  background-color: transparent;
 }
-.banner{
-    width: 85%;
-    margin: 0 auto;
-    color: #fff;
-    font-size: 34px;
-    line-height: 30px;
+.banner {
+  width: 85%;
+  margin: 0 auto;
+  color: #fff;
+  font-size: 34px;
+  line-height: 30px;
 }
-.banner h1:nth-child(2){
-    font-weight: lighter;
+.banner h1:nth-child(2) {
+  font-weight: lighter;
 }
-label{
-    
-    color: #fff;
+label {
+  color: #fff;
 }
-.search{
-    padding: 60px 0;
-    width: 85%;
-    margin: 0 auto;
+.search {
+  padding: 60px 0;
+  width: 85%;
+  margin: 0 auto;
 }
-.search input{
-    height: 45px;
-    padding-left: 20px;
-    width: 89%;
-    border: solid 1px #fff;
-    border-radius: 5px 0 0 5px;
+.search input {
+  height: 45px;
+
+  padding-left: 20px;
+  width: 72vw;
+  border: solid 1px #fff;
+  border-radius: 5px 0 0 5px;
 }
 
-.search button{
-    padding: 15px;
-    font-size: 15px;
-    width: 9%;
-    border-radius: 0 5px 5px 0;
-    background-color: #FFAF00;
-    border: solid 1px #FFAF00;
-    font-weight: bold;
-    color: #fff;
+.search button {
+  padding: 15px;
+  font-size: 15px;
+  width: 110px;
+  cursor: pointer;
+  border-radius: 0 5px 5px 0;
+  background-color: #ffaf00;
+  border: solid 1px #ffaf00;
+  font-weight: bold;
+  color: #fff;
 }

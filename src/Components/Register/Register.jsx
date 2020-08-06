@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import {
   BrowserRouter as Router,
   Switch,
@@ -7,46 +7,50 @@ import {
   Redirect,
 } from "react-router-dom";
 
+import Login from "../Login/Login";
 import Palm from "../../img/tour/palm.png";
 import Hibiscus from "../../img/tour/hibiscus.png";
-import Register from "../Register/Register";
-import "./Login.css";
+import "./Register.css";
 
-const Login = () => {
+const Register = () => {
   return (
     <Router>
       <div className="modal">
         <div className="bg">
-          <div className="login">
+          <div className="register">
             <div className="palm">
               <img src={Palm} />
             </div>
             <div className="hibiscus">
               <img src={Hibiscus} />
             </div>
-            <Link to="/">
+            <Link>
               <span>X</span>
             </Link>
-            <h1>Login</h1>
+            <h1>Register</h1>
+            <p>Full Name</p>
+            <input type="text" required />
             <p>Email</p>
-            <input type="text" />
+            <input type="email" required />
             <p>Password</p>
-            <input type="password" />
-            <button>Login</button>
+            <input type="password" required />
+            <p>Phone</p>
+            <input type="text" required />
+            <button>Register</button>
             <p>
-              Don't have an account ? Klik <Link to="/register">Here</Link>
+              Already have account ? <Link to="/login">Login</Link>
             </p>
           </div>
         </div>
       </div>
 
       <Switch>
-        <Route path="/register">
-          <Register />
+        <Route path="/login">
+          <Login />
         </Route>
       </Switch>
     </Router>
   );
 };
 
-export default Login;
+export default Register;
