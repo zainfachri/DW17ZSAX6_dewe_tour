@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import {
   BrowserRouter as Router,
   Switch,
@@ -15,7 +15,7 @@ import "./Login.css";
 const Login = () => {
   return (
     <Router>
-      <div className="modal">
+      <div className="login-page">
         <div className="bg">
           <div className="login">
             <div className="palm">
@@ -24,14 +24,18 @@ const Login = () => {
             <div className="hibiscus">
               <img src={Hibiscus} />
             </div>
-            <Link to="/">
-              <span>X</span>
+            <Link>
+              <div className="closed">X</div>
             </Link>
             <h1>Login</h1>
             <p>Email</p>
-            <input type="text" />
+            <div className="input-group input-group-lg mb-3">
+              <input type="text" class="form-control" />
+            </div>
             <p>Password</p>
-            <input type="password" />
+            <div className="input-group input-group-lg mb-3">
+              <input type="password" class="form-control" />
+            </div>
             <button>Login</button>
             <p>
               Don't have an account ? Klik <Link to="/register">Here</Link>

@@ -15,7 +15,7 @@ import "./Register.css";
 const Register = () => {
   return (
     <Router>
-      <div className="modal">
+      <div className="register-page">
         <div className="bg">
           <div className="register">
             <div className="palm">
@@ -25,17 +25,25 @@ const Register = () => {
               <img src={Hibiscus} />
             </div>
             <Link>
-              <span>X</span>
+              <div className="closed">X</div>
             </Link>
             <h1>Register</h1>
-            <p>Full Name</p>
-            <input type="text" required />
+            <p style={{ marginTop: 40 }}>Full Name</p>
+            <div className="input-group input-group-lg mb-3">
+              <input type="text" class="form-control" />
+            </div>
             <p>Email</p>
-            <input type="email" required />
+            <div className="input-group input-group-lg mb-3">
+              <input type="email" class="form-control" />
+            </div>
             <p>Password</p>
-            <input type="password" required />
+            <div className="input-group input-group-lg mb-3">
+              <input type="password" class="form-control" />
+            </div>
             <p>Phone</p>
-            <input type="text" required />
+            <div className="input-group input-group-lg mb-3">
+              <input type="text" class="form-control" />
+            </div>
             <button>Register</button>
             <p>
               Already have account ? <Link to="/login">Login</Link>

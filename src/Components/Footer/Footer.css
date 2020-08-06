@@ -1,13 +1,13 @@
 .footer {
   text-align: center;
-  height: 54px;
   font-size: 18px;
   color: #fff;
+  height: 65px;
   background-color: #ffaf00;
   position: relative;
 }
 .footer p {
-  line-height: 50px;
+  padding-top: 20px;
 }
 .footer .leaf {
   position: absolute;
