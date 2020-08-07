@@ -11,6 +11,9 @@
   float: left;
   margin: 30px 30px;
 }
+.benefit img {
+  margin-bottom: 20px !important;
+}
 .card img {
   width: 40%;
   margin: 0 auto;

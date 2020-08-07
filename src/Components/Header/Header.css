@@ -1,10 +1,13 @@
 .top {
   background-size: 100%, cover !important;
   height: 75vh;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
 }
 .logo {
-  float: left;
-  padding: 20px 0;
+  margin-left: 80px;
   cursor: pointer;
 }
 header {
@@ -24,26 +27,34 @@ header {
   padding: 10px 30px;
   cursor: pointer;
 }
-.menu button:hover {
-  opacity: 0.8;
+.navBg button:hover {
+  box-shadow: -1px 1px 14px 3px #fff;
+}
+.reg,
+.log {
+  border-radius: 6px;
+  font-weight: bold;
+  padding: 10px 25px;
+  color: #fff;
+  font-size: 16px;
 }
 .reg {
-  background-color: #ffaf00;
-  border: solid 1px #ffaf00;
+  margin-right: 70px;
+  background-color: #ffaf00 !important;
+  border: solid 1px #ffaf00 !important;
 }
 .log {
+  margin-right: 20px;
   border: solid 1px #fff;
   background-color: transparent;
 }
-.banner {
+.head {
   width: 85%;
   margin: 0 auto;
+  margin-top: 40px;
   color: #fff;
   font-size: 64px !important;
-  line-height: 30px;
-}
-.banner h1:nth-child(2) {
-  font-weight: lighter;
+  z-index: 0;
 }
 label {
   color: #fff;

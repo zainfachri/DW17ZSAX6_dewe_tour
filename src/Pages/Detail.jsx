@@ -3,7 +3,7 @@ import DetailTour from "../Components/DetailTour/DetailTour";
 
 const Detail = () => {
   return (
-    <div className="App">
+    <div className="detail">
       <DetailTour />
     </div>
   );

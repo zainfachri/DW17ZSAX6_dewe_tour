@@ -1,37 +1,26 @@
 import React from "react";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Link,
-  Route,
-  Redirect,
-} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import DetailTour from "../DetailTour/DetailTour";
 const Tour = (props) => {
+  const { img, pages, name, price, location } = props;
+
   return (
-    <Router>
-      <div className="list">
-        <Link to="/detail">
-          <div className="tour">
-            <div className="picture">
-              <img src={props.img} />
-              <p>{props.pages}</p>
-            </div>
-            <p>{props.name}</p>
-            <div className="price">
-              <p>{props.price}</p>
-              <p>{props.location}</p>
-            </div>
+    <div className="list">
+      <Link to="/detail">
+        <div className="tour">
+          <div className="picture">
+            <img src={img} />
+            <p>{pages}</p>
           </div>
-        </Link>
-      </div>
-      <Switch>
-        <Route path="/detail">
-          <DetailTour />
-        </Route>
-      </Switch>
-    </Router>
+          <p>{name}</p>
+          <div className="price">
+            <p>{price}</p>
+            <p>{location}</p>
+          </div>
+        </div>
+      </Link>
+    </div>
   );
 };
 export default Tour;

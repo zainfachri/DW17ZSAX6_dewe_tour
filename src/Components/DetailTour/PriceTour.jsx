@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const PriceTour = () => {
   return (
@@ -27,9 +28,11 @@ const PriceTour = () => {
           <div className="row book">
             <div className="col-7" />
             <div className="col-5">
-              <button type="button" class="btn btn-warning btn-lg">
-                BOOK NOW
-              </button>
+              <Link to="/payment">
+                <button type="button" class="btn btn-warning btn-lg">
+                  BOOK NOW
+                </button>
+              </Link>
             </div>
           </div>
         </div>
