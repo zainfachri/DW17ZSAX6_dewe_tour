@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const PayConfirm = () => {
+const PayConfirm = ({ setModalPayment }) => {
   return (
     <div className="payconfirmBg">
       <div class="modal-dialog payconfirm">
@@ -10,22 +10,21 @@ const PayConfirm = () => {
             <p>
               Your payment will be confirmed within 1 x 24 hours To see orders
               click{" "}
-              <Link to="/detail">
+              <Link to="/profile">
                 <strong>Here </strong>
               </Link>
               thank you{" "}
             </p>
           </div>
           <div class="modal-footer">
-            <Link to="/">
-              <button
-                type="button"
-                class="btn btn-secondary"
-                data-dismiss="modal"
-              >
-                Close
-              </button>
-            </Link>
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+              onClick={() => setModalPayment(false)}
+            >
+              Close
+            </button>
           </div>
         </div>
       </div>

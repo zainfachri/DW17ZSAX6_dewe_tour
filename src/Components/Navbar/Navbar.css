@@ -5,3 +5,15 @@
 .logo {
   width: 65%;
 }
+.iconPic {
+  position: absolute;
+  left: 0;
+  top: 0;
+  text-align: right;
+  margin: 10px 100px;
+}
+.iconPic img {
+  width: 4.5%;
+  border: solid 2px #ffaf00;
+  border-radius: 50%;
+}

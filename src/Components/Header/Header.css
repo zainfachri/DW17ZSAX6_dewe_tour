@@ -1,5 +1,6 @@
 .top {
   background-size: 100%, cover !important;
+  background-repeat: no-repeat;
   height: 75vh;
   position: absolute;
   top: 0;

@@ -1,12 +1,15 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useState } from "react";
 
 import PaymentName from "../Components/Payment/PaymentName";
 import PaymentBook from "../Components/Payment/PaymentBook";
 import PaymentTotal from "../Components/Payment/PaymentTotal";
 import PayButton from "../Components/Payment/PayButton";
+import PayConfirm from "../Components/Payment/PayConfirm";
 import "../Components/Payment/Payment.css";
 
 const Payment = () => {
+  const [modalPayment, setModalPayment] = useState(false);
+
   return (
     <Fragment>
       <div className="container payment">
@@ -14,10 +17,11 @@ const Payment = () => {
           <PaymentName />
           <PaymentBook />
           <PaymentTotal />
+          {modalPayment && <PayConfirm setModalPayment={setModalPayment} />}
         </div>
       </div>
       <div className="container">
-        <PayButton />
+        <PayButton setModalPayment={setModalPayment} />
       </div>
     </Fragment>
   );

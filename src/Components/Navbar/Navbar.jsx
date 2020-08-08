@@ -1,23 +1,23 @@
-import React from "react";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Link,
-  Route,
-  Redirect,
-} from "react-router-dom";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
-import Login from "../Login/Login";
-import Register from "../Register/Register";
 import Logo from "../../img/tour/logo.png";
-
 import NavBg from "../../img/icon/navbar.png";
+import Profil from "../../img/profle/fachri.jpg";
+import DropDown from "../DropDown/DropDown";
+
 import "../Header/Header.css";
 import "./Navbar.css";
 
-const Navbar = () => {
+const Navbar = ({ isLogin, setModalLogin, setModalRegister }) => {
+  const [isDropdown, setDropDown] = useState(false);
+
+  const showDropDown = () => {
+    setDropDown(!isDropdown);
+  };
+
   return (
-    <Router>
+    <>
       <nav
         className="navbar navbar-light navBg"
         style={{
@@ -27,32 +27,36 @@ const Navbar = () => {
         <Link to="/">
           <img className="logo" src={Logo} />
         </Link>
-        <form className="form-inline">
-          <Link to="/Login">
-            <button className="log" type="submit">
-              Login
-            </button>
-          </Link>
-          <Link to="/Register">
-            <button
-              className="reg"
-              style={{ color: "#fff", marginRight: 100 }}
-              type="submit"
-            >
-              Register
-            </button>
-          </Link>
-        </form>
+        <div className="auth">
+          {!isLogin && (
+            <div>
+              <button
+                className="log"
+                type="submit"
+                onClick={() => setModalLogin(true)}
+              >
+                Login
+              </button>
+
+              <button
+                className="reg"
+                style={{ color: "#fff", marginRight: 100 }}
+                type="submit"
+                onClick={() => setModalRegister(true)}
+              >
+                Register
+              </button>
+            </div>
+          )}
+          {isLogin && (
+            <div className="iconPic">
+              <img src={Profil} alt="" onClick={() => showDropDown()} />
+            </div>
+          )}
+        </div>
       </nav>
-      <Switch>
-        <Route path="/login">
-          <Login />
-        </Route>
-        <Route path="/register">
-          <Register />
-        </Route>
-      </Switch>
-    </Router>
+      {isDropdown && <DropDown showDropDown={showDropDown} />}
+    </>
   );
 };
 

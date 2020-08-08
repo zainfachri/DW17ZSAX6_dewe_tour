@@ -1,11 +1,10 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 import Palm from "../../img/tour/palm.png";
 import Hibiscus from "../../img/tour/hibiscus.png";
 import "./Register.css";
 
-const Register = () => {
+const Register = ({ setModalRegister }) => {
   return (
     <div className="register-page">
       <div className="register">
@@ -15,9 +14,9 @@ const Register = () => {
         <div className="hibiscus">
           <img src={Hibiscus} />
         </div>
-        <Link to="/">
-          <div className="closed">X</div>
-        </Link>
+        <div className="closed" onClick={() => setModalRegister(false)}>
+          X
+        </div>
         <h1>Register</h1>
         <p style={{ marginTop: 40 }}>Full Name</p>
         <div className="input-group input-group-lg mb-3">
@@ -35,10 +34,12 @@ const Register = () => {
         <div className="input-group input-group-lg mb-3">
           <input type="text" class="form-control" />
         </div>
+        <p>Address</p>
+        <div className="input-group input-group-lg mb-3">
+          <input type="text" class="form-control" />
+        </div>
         <button>Register</button>
-        <p>
-          Already have account ? <Link to="/login">Login</Link>
-        </p>
+        <p>Already have account ? Login</p>
       </div>
     </div>
   );

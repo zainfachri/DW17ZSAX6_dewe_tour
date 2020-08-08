@@ -1,6 +1,6 @@
 import React from "react";
 
-const PaymentTotal = () => {
+const PaymentTotal = (props) => {
   return (
     <table className="table pay-price" style={{ width: "100%" }}>
       <thead>

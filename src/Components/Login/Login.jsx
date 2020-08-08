@@ -1,12 +1,10 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 import Palm from "../../img/tour/palm.png";
 import Hibiscus from "../../img/tour/hibiscus.png";
-import Register from "../Register/Register";
 import "./Login.css";
 
-const Login = () => {
+const Login = ({ handleLogin, setModalLogin }) => {
   return (
     <div className="login-page">
       <div className="login">
@@ -16,9 +14,9 @@ const Login = () => {
         <div className="hibiscus">
           <img src={Hibiscus} />
         </div>
-        <Link to="/">
-          <div className="closed">X</div>
-        </Link>
+        <div className="closed" onClick={() => setModalLogin(false)}>
+          X
+        </div>
         <h1>Login</h1>
         <p>Email</p>
         <div className="input-group input-group-lg mb-3">
@@ -28,10 +26,8 @@ const Login = () => {
         <div className="input-group input-group-lg mb-3">
           <input type="password" class="form-control" />
         </div>
-        <button>Login</button>
-        <p>
-          Don't have an account ? Klik <Link to="/register">Here</Link>
-        </p>
+        <button onClick={() => handleLogin()}>Login</button>
+        <p>Don't have an account ? Klik Here</p>
       </div>
     </div>
   );
