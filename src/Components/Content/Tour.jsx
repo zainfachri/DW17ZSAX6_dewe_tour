@@ -1,25 +1,33 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import DetailTour from "../DetailTour/DetailTour";
-const Tour = (props) => {
-  const { img, pages, name, price, location } = props;
+import tourData from "../../DataTour/TourData";
+
+const Tour = () => {
+  // const { img, pages, name, price, location } = tourData;
 
   return (
-    <div className="list">
-      <Link to="/detail">
-        <div className="tour">
-          <div className="picture">
-            <img src={img} />
-            <p>{pages}</p>
-          </div>
-          <p>{name}</p>
-          <div className="price">
-            <p>{price}</p>
-            <p>{location}</p>
+    <div className="main">
+      <p>Group Tour</p>
+      {tourData.map((tour) => (
+        <div className="tourList">
+          <div className="list">
+            <Link to="/detail">
+              <div className="tour">
+                <div className="picture">
+                  <img src={tour.img} />
+                  <p>{tour.pages}</p>
+                </div>
+                <p>{tour.name}</p>
+                <div className="price">
+                  <p>{tour.price}</p>
+                  <p>{tour.location}</p>
+                </div>
+              </div>
+            </Link>
           </div>
         </div>
-      </Link>
+      ))}
     </div>
   );
 };

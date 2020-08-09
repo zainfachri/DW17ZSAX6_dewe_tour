@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import Palm from "../../img/tour/palm.png";
 import Hibiscus from "../../img/tour/hibiscus.png";
@@ -26,8 +27,10 @@ const Login = ({ handleLogin, setModalLogin }) => {
         <div className="input-group input-group-lg mb-3">
           <input type="password" class="form-control" />
         </div>
+        {/* <Link to="/income-transaction"> */}
         <button onClick={() => handleLogin()}>Login</button>
         <p>Don't have an account ? Klik Here</p>
+        {/* </Link> */}
       </div>
     </div>
   );

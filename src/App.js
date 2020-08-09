@@ -11,7 +11,6 @@ import Navbar from "./Components/Navbar/Navbar";
 import Footer from "./Components/Footer/Footer";
 import Profile from "./Pages/Profile";
 import IncomeTrans from "./Components/Income/IncomeTrans";
-// import TestData from "./DataTour/TestData";
 
 import ScrollTop from "./Components/utility/ScrollTop";
 
@@ -58,7 +57,6 @@ function App() {
       </ScrollTop>
       {/* <IncomeTrans /> */}
       <Footer />
-      {/* <TestData /> */}
     </Router>
   );
 }

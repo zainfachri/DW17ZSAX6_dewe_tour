@@ -1,17 +1,18 @@
 import React from "react";
+import contentMenu from "../../DataTour/Benefit";
 
 import "./Content.css";
 
-const Content = (props) => {
-  const { img, name, detail } = props;
-
+const Content = () => {
   return (
     <div className="container" style={{ marginTop: 30 }}>
-      <div className="card benefit">
-        <img src={img} />
-        <h3>{name}</h3>
-        <p>{detail}</p>
-      </div>
+      {contentMenu.map((benefit) => (
+        <div className="card benefit" key={benefit.id}>
+          <img src={benefit.img} />
+          <h3>{benefit.name}</h3>
+          <p>{benefit.detail}</p>
+        </div>
+      ))}
     </div>
   );
 };

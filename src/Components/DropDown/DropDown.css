@@ -8,6 +8,10 @@
   border-radius: 7px 7px 7px 7px;
   box-shadow: -1px 4px 14px 3px rgba(0, 0, 0, 0.45) !important;
 }
+.drop-top a {
+  color: black;
+  text-decoration: none;
+}
 .triangle-up {
   position: absolute;
   right: 0;
@@ -19,7 +23,6 @@
   border-right: 20px solid transparent;
   border-bottom: 40px solid #fff;
 }
-
 .drop-out-top {
   background-color: #fff;
   padding: 10px 0;
@@ -35,7 +38,7 @@
 .drop-out-bottom {
   background-color: #fff;
   padding: 10px 0;
-  margin-top: 3px;
+  border-top: 2px solid black;
   width: 200px;
   text-align: left;
   font-size: 20px;

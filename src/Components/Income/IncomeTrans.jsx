@@ -1,5 +1,6 @@
 import React from "react";
 
+import incomeData from "../../DataTour/incomeData";
 import "./IncomeTrans.css";
 
 const IncomeTrans = () => {
@@ -7,9 +8,9 @@ const IncomeTrans = () => {
     <div className="table-wrapper">
       <div className="table-income">
         <h1>Incoming Transaction</h1>
-        <table className="table table-striped income">
+        <table className="table income">
           <thead>
-            <tr>
+            <tr style={{ backgroundColor: "#fff" }}>
               <th>No</th>
               <th>Users</th>
               <th>Trip</th>
@@ -19,66 +20,22 @@ const IncomeTrans = () => {
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td>1</td>
-              <td>M.Fachri Zain</td>
-              <td>6D/4N Fun Tassie Vaca...</td>
-              <td>bca.png</td>
-              <td>
-                <strong>Pending</strong>
-              </td>
-              <td>
-                <i class="fa fa-search" aria-hidden="true"></i>
-              </td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>M.Fachri Zain</td>
-              <td>6D/4N Fun Tassie Vaca...</td>
-              <td>bca.png</td>
-              <td>
-                <strong>Pending</strong>
-              </td>
-              <td>
-                <i class="fa fa-search" aria-hidden="true"></i>
-              </td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>M.Fachri Zain</td>
-              <td>6D/4N Fun Tassie Vaca...</td>
-              <td>bca.png</td>
-              <td>
-                <strong>Pending</strong>
-              </td>
-              <td>
-                <i class="fa fa-search" aria-hidden="true"></i>
-              </td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>M.Fachri Zain</td>
-              <td>6D/4N Fun Tassie Vaca...</td>
-              <td>bca.png</td>
-              <td>
-                <strong>Pending</strong>
-              </td>
-              <td>
-                <i class="fa fa-search" aria-hidden="true"></i>
-              </td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>M.Fachri Zain</td>
-              <td>6D/4N Fun Tassie Vaca...</td>
-              <td>bca.png</td>
-              <td>
-                <strong>Pending</strong>
-              </td>
-              <td>
-                <i class="fa fa-search" aria-hidden="true"></i>
-              </td>
-            </tr>
+            {incomeData.map((tour) => (
+              <tr key={tour.id}>
+                <td>{tour.id}</td>
+                <td>{tour.user}</td>
+                <td>{tour.name}</td>
+                <td>{tour.bookImg}</td>
+                <td>
+                  <strong className="" style={{ color: "#ff5722" }}>
+                    {tour.status}
+                  </strong>
+                </td>
+                <td>
+                  <i class="fa fa-search" aria-hidden="true"></i>
+                </td>
+              </tr>
+            ))}
           </tbody>
         </table>
       </div>
