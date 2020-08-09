@@ -31,14 +31,16 @@ const DropDown = () => {
                   <span>Pay</span>
                 </div>
               </Link>
-              <div className="drop-list">
-                <i
-                  class="fa fa-globe"
-                  aria-hidden="true"
-                  style={{ color: "#2FC5F7" }}
-                ></i>
-                <span>Trip</span>
-              </div>
+              <Link to="/income-trip">
+                <div className="drop-list">
+                  <i
+                    class="fa fa-globe"
+                    aria-hidden="true"
+                    style={{ color: "#2FC5F7" }}
+                  ></i>
+                  <span>Trip</span>
+                </div>
+              </Link>
               <Link to="/income-transaction">
                 <div className="drop-list">
                   <i

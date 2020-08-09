@@ -11,7 +11,10 @@ const Home = () => {
     <div className="App">
       <Header />
       <Content />
-      <Tour />
+      <div className="main">
+        <p>Group Tour</p>
+        <Tour />
+      </div>
     </div>
   );
 };

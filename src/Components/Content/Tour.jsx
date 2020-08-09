@@ -7,8 +7,7 @@ const Tour = () => {
   // const { img, pages, name, price, location } = tourData;
 
   return (
-    <div className="main">
-      <p>Group Tour</p>
+    <div>
       {tourData.map((tour) => (
         <div className="tourList">
           <div className="list">

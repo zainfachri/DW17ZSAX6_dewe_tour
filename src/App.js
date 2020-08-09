@@ -11,6 +11,8 @@ import Navbar from "./Components/Navbar/Navbar";
 import Footer from "./Components/Footer/Footer";
 import Profile from "./Pages/Profile";
 import IncomeTrans from "./Components/Income/IncomeTrans";
+import IncomeTrip from "./Components/Income/IncomeTrip";
+import AddTrip from "./Components/AddTrip/AddTrip";
 
 import ScrollTop from "./Components/utility/ScrollTop";
 
@@ -53,6 +55,8 @@ function App() {
           <Route exact path="/payment" component={Payment} />
           <Route exact path="/profile" component={Profile} />
           <Route exact path="/income-transaction" component={IncomeTrans} />
+          <Route exact path="/income-trip" component={IncomeTrip} />
+          <Route exact path="/add-trip" component={AddTrip} />
         </Switch>
       </ScrollTop>
       {/* <IncomeTrans /> */}
